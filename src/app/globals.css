@@ -2,3 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.yondu-arrow {
+    width: 10px;
+    height: 100px;
+    background: linear-gradient(to bottom, #ff0000 0%, #ffff00 100%);
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: yondu-arrow-animation 1s infinite alternate;
+  }
+  
+  @keyframes yondu-arrow-animation {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+  

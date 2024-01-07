@@ -1,5 +1,5 @@
 import { ALogo } from '@/assets'
-import { NavLinks } from '@/constants'
+import { NavLinks, NavLogos } from '@/constants/NavbarConst'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -11,12 +11,17 @@ function Navbar() {
                 <Image className='hover:cursor-pointer' src={ALogo} alt="logo" />
             </Link>
             <div>
-                <ul className="grid grid-cols-5 gap-x-4">
-                    {NavLinks.map((nav) => {
-                        return (
-                            <li key={nav.id} className="bg-gray-100 p-3 rounded-md text-center hover:cursor-pointer">{nav.name}</li>
-                        )
-                    })}
+                <ul className="flex items-center"> 
+                    {NavLinks.map((nav) => (
+                        <li key={nav.id} className="nav-list">{nav.name}</li>
+                    ))}
+                    {NavLogos.map((logo) => (
+                        <Link href={logo.link}>
+                        <li key={logo.id}>
+                        <Image className="m-1" src={logo.logo} alt={logo.name || 'social_media_logo'} title={logo.name || 'social_media_handle'}/>
+                      </li>
+                      </Link>
+                    ))}
                 </ul>
             </div>
         </nav>

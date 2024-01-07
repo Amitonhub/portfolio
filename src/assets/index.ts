@@ -1,5 +1,7 @@
 import ALogo from './a-logo.svg'
-import YonduArrow from './yondu-arrow.svg'
-import YonduArrowImg from './yondu-arrow.png'
+import GithubLogo from './github.svg'
+import InstagramLogo from './instagram.svg'
+import LinkedinLogo from './linkedin.svg'
+import ProfilePic from './amit.jpg'
 
-export { ALogo, YonduArrow, YonduArrowImg }
+export { ALogo, GithubLogo, InstagramLogo, LinkedinLogo, ProfilePic }

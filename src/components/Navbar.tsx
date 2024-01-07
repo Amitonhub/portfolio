@@ -16,11 +16,11 @@ function Navbar() {
                         <li key={nav.id} className="nav-list">{nav.name}</li>
                     ))}
                     {NavLogos.map((logo) => (
-                        <Link href={logo.link}>
-                        <li key={logo.id}>
-                        <Image className="m-1" src={logo.logo} alt={logo.name || 'social_media_logo'} title={logo.name || 'social_media_handle'}/>
-                      </li>
-                      </Link>
+                        <Link href={logo.link} key={logo.id}>
+                            <li>
+                                <Image className="m-1" src={logo.logo} alt={logo.name || 'social_media_logo'} title={logo.name || 'social_media_handle'}/>
+                            </li>
+                        </Link>
                     ))}
                 </ul>
             </div>
@@ -28,4 +28,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar;

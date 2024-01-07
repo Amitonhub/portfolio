@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Rozha_One, Tilt_Warp } from "next/font/google";
-const BungeeSpice = Tilt_Warp({ weight: "400", preload: false });
+const TiltWarp = Tilt_Warp({ weight: "400", preload: false });
 import TextTransition, { presets } from 'react-text-transition';
 import { ProfilePic } from "@/assets";
 import Image from "next/image";
@@ -22,7 +22,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className={`${BungeeSpice.className} py-16 text-2xl flex items-center justify-between animate-finalText`}>
+    <div className={`${TiltWarp.className} py-16 text-2xl flex items-center justify-between animate-finalText`}>
       <div>
         <span className={RozhaOne.className}>
           अतः नमस्ते,

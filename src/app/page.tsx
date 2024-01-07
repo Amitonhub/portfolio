@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import HeroSection from "./home/page";
+import HeroSection from "../components/HeroSection";
 import Cursor from "../components/Cursor";
 
 export default function Home() {
